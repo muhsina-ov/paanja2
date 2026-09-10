@@ -1,0 +1,12 @@
+.vercel
+.env*
+.git/
+node_modules/
+dist/
+WhatsApp Chat*/
+*.ORIGINAL
+reception.html
+ChatGPT*
+tilda-stat-1.0.min.js
+tilda-variant-select-1.0.min.js
+tilda-popup-1.1.min.css

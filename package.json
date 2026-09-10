@@ -1,0 +1,9 @@
+{
+  "name": "paanja",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "bash build.sh",
+    "build": "bash build.sh",
+    "deploy": "bash build.sh && npx wrangler deploy"
+  }
+}

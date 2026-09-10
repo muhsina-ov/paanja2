@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Mariyam &amp; Ajmal Sha — Wedding Celebrations</title>
+
+  <!-- SEO & Social Sharing -->
+  <meta property="og:title" content="Mariyam &amp; Ajmal Sha — Wedding Celebrations" />
+  <meta property="og:description"
+    content="Together with their families, Mariyam &amp; Ajmal Sha invite you to celebrate their wedding in October 2026." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mariyam-ajmal.invitingyou.top/" />
+  <meta property="og:image" content="https://mariyam-ajmal.invitingyou.top/images/og-image.jpg" />
+  <meta property="og:image:secure_url" content="https://mariyam-ajmal.invitingyou.top/images/og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="670" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://mariyam-ajmal.invitingyou.top/images/og-image.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/cdn/favicon-light_1.png"
+    media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/cdn/favicon-dark_1.png"
+    media="(prefers-color-scheme: dark)" />
+  <link rel="apple-touch-icon" href="images/cdn/apple-touch-icon_1.png">
+
+  <!-- Google Fonts & Custom CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@200;300;400;500;600&family=Pinyon+Script&family=Alex+Brush&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+  <!-- Background Audio -->
+  <audio id="weiAudio" loop preload="auto">
+    <source src="media/Einaudi_ Divenire (1) (1).mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Envelope Interactive Overlay -->
+  <div id="weiOverlay" role="button" aria-label="Tap to open invitation">
+    <img id="weiImg" src="images/envelope.png" alt="Open your invitation" draggable="false">
+    <div id="weiTapWrap">
+      <div class="wei-chevron"></div>
+      <div id="weiTapLabel">Tap to open</div>
+    </div>
+  </div>
+
+  <!-- Wax Seal Opening Video Transition -->
+  <div id="weiVideoWrap">
+    <video id="weiVideo" src="media/1782224012851.mp4" muted playsinline preload="auto"></video>
+  </div>
+
+  <!-- Floating Audio Control Button -->
+  <div id="weiAudioBtn" title="Toggle Music" role="button" aria-label="Toggle Background Music">
+    <svg id="weiIconPause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <rect x="6" y="5" width="4" height="14" rx="1" />
+      <rect x="14" y="5" width="4" height="14" rx="1" />
+    </svg>
+    <svg id="weiIconPlay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display:none">
+      <polygon points="6,4 20,12 6,20" />
+    </svg>
+  </div>
+
+  <!-- Main Digital Invitation Container -->
+  <main class="invitation-main">
+
+    <!-- 1. QURANIC VERSE & FAMILY BLESSINGS SECTION -->
+    <section class="verse-blessing-section" id="blessing-section">
+      <div class="arabic-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+      <div class="verse-arabic">وَخَلَقْنَاكُمْ أَزْوَاجًا</div>
+      <div class="verse-translation">"And We created you in pairs."<br><span
+          style="font-size: 13px; opacity: 0.8;">(Surah An-Naba 78:8)</span></div>
+
+      <div class="family-intro">Together with their families</div>
+
+      <div class="parents-container">
+        <!-- Bride's Parents -->
+        <div class="parents-card">
+          <div class="parents-names">Umar Yusuf Panja<br>&amp; Shabeena Umar Panja</div>
+          <div class="parents-label">Proud Parents of</div>
+          <div class="parents-child">Mariyam</div>
+        </div>
+
+        <div style="font-family: var(--font-script); font-size: 34px; color: var(--color-gold-dark); margin: -10px 0;">
+          &amp;</div>
+
+        <!-- Groom's Parents -->
+        <div class="parents-card">
+          <div class="parents-names">P A Basheer<br>&amp; Arifa Basheer</div>
+          <div class="parents-label">Proud Parents of</div>
+          <div class="parents-child">Ajmal Sha</div>
+        </div>
+      </div>
+
+      <div class="scroll-cue" onclick="document.getElementById('hero-section').scrollIntoView({behavior: 'smooth'})">
+        <span class="scroll-cue-text">Scroll Down</span>
+        <div class="scroll-cue-arrow"></div>
+      </div>
+    </section>
+
+    <!-- 2. HERO COVER SECTION -->
+    <section class="hero-section" id="hero-section">
+      <video class="hero-video-bg" autoplay muted loop playsinline webkit-playsinline disablePictureInPicture
+        disableremoteplayback preload="auto">
+        <source src="media/Swans2.mov" type="video/mp4">
+      </video>
+
+      <div class="hero-content">
+        <div class="hero-top-badge">Wedding Celebrations</div>
+
+        <div class="hero-couple-names">
+          <div class="hero-name">Mariyam</div>
+          <div class="hero-ampersand">&amp;</div>
+          <div class="hero-name">Ajmal Sha</div>
+        </div>
+
+        <div class="hero-ornament-wrap">
+          <img src="images/cdn/acomm-decor.png" alt="Floral Ornament">
+        </div>
+
+        <div class="hero-quote-block">
+          <p style="font-size: 15px; line-height: 1.6; color: var(--color-text-muted);">
+            Dear Friends and Family,<br>
+            Join us for an unforgettable celebration of love, laughter, and sincere duas as we embark on our journey of
+            forever.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COUNTDOWN TIMER -->
+    <section class="countdown-section" id="countdown-section">
+      <div class="countdown-title">The Celebrations Begin In</div>
+      <div class="countdown-grid">
+        <div class="timer-box">
+          <span class="timer-digit" id="timer-days">00</span>
+          <span class="timer-unit">Days</span>
+        </div>
+        <div class="timer-colon">:</div>
+        <div class="timer-box">
+          <span class="timer-digit" id="timer-hours">00</span>
+          <span class="timer-unit">Hours</span>
+        </div>
+        <div class="timer-colon">:</div>
+        <div class="timer-box">
+          <span class="timer-digit" id="timer-mins">00</span>
+          <span class="timer-unit">Minutes</span>
+        </div>
+        <div class="timer-colon">:</div>
+        <div class="timer-box">
+          <span class="timer-digit" id="timer-secs">00</span>
+          <span class="timer-unit">Seconds</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. DEDICATED OCCASION CARDS -->
+    <section class="events-section-wrapper" id="events-section">
+      <div class="events-main-header">
+        <div class="events-badge">Itinerary</div>
+        <h2 class="events-title">Celebration of Events</h2>
+      </div>
+
+      <!-- EVENT: RECEPTION -->
+      <article class="event-card theme-reception" style="position:relative;overflow:hidden;">
+        <!-- Floral corner decoration top-left -->
+        <img src="images/cdn/noroot_14.png" alt="" aria-hidden="true" style="position:absolute;top:-8px;left:-8px;width:120px;opacity:0.5;pointer-events:none;z-index:0;">
+        <!-- Floral corner decoration bottom-right (mirrored) -->
+        <img src="images/cdn/noroot_14.png" alt="" aria-hidden="true" style="position:absolute;bottom:-8px;right:-8px;width:110px;opacity:0.4;pointer-events:none;z-index:0;transform:rotate(180deg);">
+        <div class="event-card-inner-frame" style="position:relative;z-index:1;">
+          <h3 class="card-title">Reception</h3>
+
+          <!-- Gold ornamental divider -->
+          <div style="margin: 8px auto 4px; width: 140px;">
+            <img src="images/cdn/acomm-decor.png" alt="" aria-hidden="true" style="width:100%;opacity:0.65;display:block;">
+          </div>
+
+          <div class="card-divider"></div>
+
+          <div class="card-date-container">
+            <div class="card-date-day">Thursday</div>
+            <div class="card-date-big">08</div>
+            <div class="card-date-day">October<br><span style="font-size: 11px; font-weight: normal;">2026</span></div>
+          </div>
+
+          <div class="card-time">06:00 PM Onwards With dinner</div>
+
+          <div class="card-venue-block">
+            <div class="card-venue-label">Venue</div>
+            <div class="card-venue-name">Sreedhareyam Convention Center</div>
+            <div class="card-venue-city">Karunagapally, Kerala</div>
+          </div>
+
+          <div class="card-tagline">"Join us to celebrate our joyous union with feast and warm blessings"</div>
+
+          <!-- Flanking swirl ornaments -->
+          <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin: 10px 0 6px;">
+            <img src="images/cdn/left-element_1.png" alt="" aria-hidden="true" style="width:55px;opacity:0.55;">
+            <img src="images/cdn/right-element_1.png" alt="" aria-hidden="true" style="width:55px;opacity:0.55;">
+          </div>
+
+          <a href="https://share.google/z1JTLPXxjoXxZbH6P" target="_blank" rel="noopener noreferrer" class="btn-maps">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+            Open in Maps
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- 5. ADD TO CALENDAR & FOOTER -->
+    <footer class="footer-action-section">
+      <div class="calendar-btn-wrap">
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mariyam+%26+Ajmal+Sha+Wedding+Celebrations&dates=20261001T103000Z/20261008T183000Z&details=Wedding+Celebrations+of+Mariyam+%26+Ajmal+Sha.+Mehendi%2C+Haldi%2C+Shukrana%2C+Nikaah+%26+Reception.&location=Bangalore+%26+Kerala"
+          target="_blank" rel="noopener noreferrer" class="btn-calendar">
+          <svg style="width:16px;height:16px;fill:currentColor;" viewBox="0 0 24 24">
+            <path
+              d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
+          </svg>
+          Add to Calendar
+        </a>
+      </div>
+
+      <div class="footer-quote">With Love &amp; Duas</div>
+      <div class="footer-credits">Mariyam &amp; Ajmal</div>
+    </footer>
+
+  </main>
+
+  <!-- Interactive Scripts -->
+  <script>
+    (function () {
+      var overlay = document.getElementById('weiOverlay');
+      var videoWrap = document.getElementById('weiVideoWrap');
+      var video = document.getElementById('weiVideo');
+      var audio = document.getElementById('weiAudio');
+      var audioBtn = document.getElementById('weiAudioBtn');
+      var iconPause = document.getElementById('weiIconPause');
+      var iconPlay = document.getElementById('weiIconPlay');
+      var done = false;
+
+      function startInvitation() {
+        if (done) return;
+        done = true;
+
+        // Instantly display video wrap with solid background (no fade-in lag)
+        videoWrap.classList.add('wei-video-in');
+
+        // Hide tap prompt immediately
+        var tapWrap = document.getElementById('weiTapWrap');
+        if (tapWrap) tapWrap.style.display = 'none';
+
+        // Play wax seal video
+        var vp = video.play();
+        if (vp && vp.catch) {
+          vp.catch(function () {
+            endVideoTransition();
+          });
+        }
+
+        // Hide static envelope overlay once video container is active
+        overlay.style.display = 'none';
+
+        // Start background hero video on trusted user gesture
+        document.querySelectorAll('.hero-video-bg').forEach(function (hv) {
+          var hp = hv.play();
+          if (hp && hp.catch) hp.catch(function () { });
+        });
+
+        // Start music simultaneously
+        audio.volume = 0.85;
+        var ap = audio.play();
+        if (ap && ap.catch) ap.catch(function () { });
+      }
+
+      function endVideoTransition() {
+        videoWrap.classList.remove('wei-video-in');
+        videoWrap.classList.add('wei-video-out');
+        setTimeout(function () { videoWrap.style.display = 'none'; }, 1300);
+
+        // Show floating audio button
+        audioBtn.style.visibility = 'visible';
+        audioBtn.style.opacity = '1';
+      }
+
+      // Tap envelope to open
+      overlay.addEventListener('click', startInvitation);
+      overlay.addEventListener('touchstart', startInvitation, { passive: true });
+
+      // Video fade transition
+      video.addEventListener('timeupdate', function () {
+        if (video.duration && video.currentTime >= video.duration - 0.8 && !video.dataset.fading) {
+          video.dataset.fading = '1';
+          endVideoTransition();
+        }
+      });
+      video.addEventListener('ended', endVideoTransition);
+
+      // Audio button toggle
+      audioBtn.addEventListener('click', function () {
+        if (audio.paused) {
+          audio.play();
+          iconPlay.style.display = 'none';
+          iconPause.style.display = 'block';
+        } else {
+          audio.pause();
+          iconPlay.style.display = 'block';
+          iconPause.style.display = 'none';
+        }
+      });
+
+      // Countdown Timer Logic (October 1, 2026, 04:00 PM IST)
+      var targetDate = new Date('2026-10-01T16:00:00+05:30').getTime();
+      function updateCountdown() {
+        var now = new Date().getTime();
+        var diff = targetDate - now;
+
+        if (diff <= 0) {
+          document.getElementById('timer-days').textContent = '00';
+          document.getElementById('timer-hours').textContent = '00';
+          document.getElementById('timer-mins').textContent = '00';
+          document.getElementById('timer-secs').textContent = '00';
+          return;
+        }
+
+        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById('timer-days').textContent = String(days).padStart(2, '0');
+        document.getElementById('timer-hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('timer-mins').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('timer-secs').textContent = String(seconds).padStart(2, '0');
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      video.load();
+    })();
+  </script>
+</body>
+
+</html>

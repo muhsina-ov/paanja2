@@ -1,0 +1,1077 @@
+/* ══════════════════════════════════════════════════════════════════
+   WAX SEAL ROYALE - MARIYAM & AJMAL SHA WEDDING INVITATION
+   Custom Design System & Luxury Event Styling
+   ══════════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@200;300;400;500;600&family=Pinyon+Script&family=Alex+Brush&display=swap');
+
+:root {
+  --color-bg-ivory: #F9F0E0;
+  --color-bg-cream: #FAF4EB;
+  --color-gold-primary: #a67d2b;
+  --color-gold-light: #d8ba72;
+  --color-gold-dark: #8c643c;
+  --color-gold-shimmer: linear-gradient(135deg, #a67d2b 0%, #d8ba72 50%, #8c643c 100%);
+  --color-burgundy: #5A0F1B;
+  --color-burgundy-light: #7A1A29;
+  --color-olive: #394838;
+  --color-olive-dark: #243023;
+  --color-yellow-gold: #c29336;
+  --color-text-dark: #3c3228;
+  --color-text-muted: #6a5140;
+  --font-serif-title: 'Cinzel', 'Playfair Display', Georgia, serif;
+  --font-serif-body: 'Cormorant Garamond', Georgia, serif;
+  --font-script: 'Pinyon Script', 'Alex Brush', cursive;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-arabic: 'Amiri', 'Traditional Arabic', serif;
+}
+
+body {
+  background-color: var(--color-bg-ivory);
+  color: var(--color-text-dark);
+  font-family: var(--font-serif-body);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Container Wrapper ── */
+.invitation-main {
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+  background-color: var(--color-bg-ivory);
+  position: relative;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+  min-height: 100vh;
+}
+
+/* ── Global geometric pattern (opacity baked into SVG stroke-opacity) ── */
+:root {
+  --geo-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cdefs%3E%3Cpattern id='geo' x='0' y='0' width='60' height='60' patternUnits='userSpaceOnUse'%3E%3Cpolygon points='30,2 34,10 42,10 36,16 38,24 30,20 22,24 24,16 18,10 26,10' fill='none' stroke='%238B6914' stroke-width='1' stroke-opacity='0.1'/%3E%3Cpolygon points='30,38 34,46 42,46 36,52 38,60 30,56 22,60 24,52 18,46 26,46' fill='none' stroke='%238B6914' stroke-width='1' stroke-opacity='0.1'/%3E%3Cline x1='30' y1='20' x2='30' y2='38' stroke='%238B6914' stroke-width='0.8' stroke-opacity='0.1'/%3E%3Cline x1='18' y1='10' x2='0' y2='20' stroke='%238B6914' stroke-width='0.8' stroke-opacity='0.1'/%3E%3Cline x1='42' y1='10' x2='60' y2='20' stroke='%238B6914' stroke-width='0.8' stroke-opacity='0.1'/%3E%3Cline x1='18' y1='46' x2='0' y2='40' stroke='%238B6914' stroke-width='0.8' stroke-opacity='0.1'/%3E%3Cline x1='42' y1='46' x2='60' y2='40' stroke='%238B6914' stroke-width='0.8' stroke-opacity='0.1'/%3E%3Ccircle cx='30' cy='30' r='2.5' fill='none' stroke='%238B6914' stroke-width='0.8' stroke-opacity='0.1'/%3E%3Ccircle cx='0' cy='0' r='2' fill='none' stroke='%238B6914' stroke-width='0.8' stroke-opacity='0.1'/%3E%3Ccircle cx='60' cy='0' r='2' fill='none' stroke='%238B6914' stroke-width='0.8' stroke-opacity='0.1'/%3E%3Ccircle cx='0' cy='60' r='2' fill='none' stroke='%238B6914' stroke-width='0.8' stroke-opacity='0.1'/%3E%3Ccircle cx='60' cy='60' r='2' fill='none' stroke='%238B6914' stroke-width='0.8' stroke-opacity='0.1'/%3E%3Crect x='26' y='26' width='8' height='8' fill='none' stroke='%238B6914' stroke-width='0.6' stroke-opacity='0.1' transform='rotate(45 30 30)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='60' height='60' fill='url(%23geo)'/%3E%3C/svg%3E");
+}
+
+/* ── Envelope & Audio Controls ── */
+#weiOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: #F9F0E0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  transition: opacity 1.4s ease;
+}
+
+#weiImg {
+  width: 100%;
+  max-width: 440px;
+  display: block;
+  object-fit: contain;
+}
+
+#weiTapWrap {
+  position: absolute;
+  bottom: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  animation: weiTapIn 1.2s 0.8s both;
+}
+
+@keyframes weiTapIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(6px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+#weiTapLabel {
+  font-family: var(--font-serif-title);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(140, 100, 60, 0.85);
+  animation: weiPulse 2.4s 1.6s ease-in-out infinite;
+  white-space: nowrap;
+}
+
+@keyframes weiPulse {
+  0%, 100% { opacity: 0.45; letter-spacing: 0.28em; }
+  50%       { opacity: 1;    letter-spacing: 0.32em; }
+}
+
+.wei-chevron {
+  width: 10px;
+  height: 10px;
+  border-right: 1.5px solid rgba(140, 100, 60, 0.7);
+  border-top: 1.5px solid rgba(140, 100, 60, 0.7);
+  transform: rotate(-45deg);
+  animation: weiChevron 2.4s 1.9s ease-in-out infinite;
+}
+
+@keyframes weiChevron {
+  0%, 100% { transform: rotate(-45deg) translate(0, 0); opacity: 0.6; }
+  50%       { transform: rotate(-45deg) translate(2px, -2px); opacity: 1; }
+}
+
+#weiVideoWrap {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F9F0E0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#weiVideoWrap.wei-video-in {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: none; /* Instant solid appearance on start, no fade lag */
+}
+
+#weiVideoWrap.wei-video-out {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.2s ease, visibility 1.2s ease;
+  pointer-events: none;
+}
+
+#weiVideo {
+  width: 100%;
+  max-width: 440px;
+  display: block;
+  object-fit: contain;
+}
+
+#weiAudioBtn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 52px;
+  height: 52px;
+  background: var(--color-burgundy);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2147483647;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(90, 15, 27, 0.35);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+  border: 1.5px solid rgba(216, 186, 114, 0.6);
+}
+
+#weiAudioBtn:hover {
+  transform: scale(1.06);
+}
+
+#weiAudioBtn svg {
+  width: 22px;
+  height: 22px;
+  fill: #FAF4EB;
+}
+
+/* ── Hero Section ── */
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 24px 45px;
+  text-align: center;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 30%, rgba(255, 252, 245, 0.95) 0%, rgba(249, 240, 224, 0.85) 100%);
+  border-bottom: 1px solid rgba(166, 125, 43, 0.15);
+}
+
+.hero-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+  z-index: 1;
+  pointer-events: none;
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+/* Hide iOS Safari native play button overlay in Low Power Mode / blocked autoplay */
+video::-webkit-media-controls,
+video::-webkit-media-controls-start-playback-button,
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-top-badge {
+  font-family: var(--font-serif-title);
+  font-size: 14px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-gold-primary);
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.hero-top-badge::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--color-gold-light);
+  margin: 10px auto 0;
+}
+
+.hero-couple-names {
+  margin: 20px 0 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-name {
+  font-family: var(--font-serif-body);
+  font-size: 46px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--color-gold-primary);
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(166, 125, 43, 0.15);
+}
+
+.hero-ampersand {
+  font-family: var(--font-script);
+  font-size: 44px;
+  color: var(--color-gold-dark);
+  line-height: 0.8;
+  margin: 8px 0;
+}
+
+.hero-ornament-wrap {
+  width: 140px;
+  margin: 15px auto;
+  opacity: 0.85;
+}
+
+.hero-ornament-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.hero-quote-block {
+  margin-top: 25px;
+  max-width: 420px;
+}
+
+.hero-quote-main {
+  font-family: var(--font-serif-title);
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  line-height: 1.6;
+  color: var(--color-gold-primary);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.hero-quote-sub {
+  font-family: var(--font-serif-body);
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+/* ── Scroll Cues ── */
+.hero-scroll-cue,
+.scroll-cue {
+  margin-top: 35px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  padding: 6px 14px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.hero-scroll-cue:active,
+.scroll-cue:active {
+  transform: scale(0.96);
+  opacity: 0.8;
+}
+
+.hero-scroll-text,
+.scroll-cue-text {
+  font-family: var(--font-serif-title);
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  transition: color 0.3s ease;
+}
+
+.hero-scroll-cue:hover .hero-scroll-text,
+.scroll-cue:hover .scroll-cue-text {
+  color: var(--color-gold-primary);
+}
+
+.hero-scroll-arrow,
+.scroll-cue-arrow {
+  width: 14px;
+  height: 14px;
+  border-right: 1.5px solid var(--color-gold-primary);
+  border-bottom: 1.5px solid var(--color-gold-primary);
+  transform: rotate(45deg);
+  animation: bounceDown 2s infinite;
+}
+
+.verse-blessing-section .scroll-cue {
+  margin-top: 35px;
+}
+
+.countdown-section .scroll-cue {
+  margin-top: 30px;
+}
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0) rotate(45deg); }
+  50%      { transform: translateY(6px) rotate(45deg); }
+}
+
+/* ── Quranic Verse & Parents Blessing Section ── */
+.verse-blessing-section {
+  padding: 55px 24px 45px;
+  text-align: center;
+  background: #FAF4EB;
+  background-image: var(--geo-pattern);
+  background-repeat: repeat;
+  background-size: 60px 60px;
+  position: relative;
+  border-bottom: 1px solid rgba(166, 125, 43, 0.15);
+}
+
+.arabic-bismillah {
+  font-family: var(--font-arabic);
+  font-size: 28px;
+  color: var(--color-gold-primary);
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+.verse-arabic {
+  font-family: var(--font-arabic);
+  font-size: 26px;
+  color: var(--color-gold-primary);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.verse-translation {
+  font-family: var(--font-serif-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin-bottom: 30px;
+}
+
+.parents-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.family-intro {
+  font-family: var(--font-serif-title);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-gold-primary);
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.parents-card {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(166, 125, 43, 0.25);
+  border-radius: 8px;
+  padding: 24px 18px;
+  box-shadow: 0 4px 15px rgba(166, 125, 43, 0.05);
+}
+
+.parents-names {
+  font-family: var(--font-serif-title);
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  color: var(--color-gold-primary);
+  font-weight: 600;
+}
+
+.parents-label {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.parents-child {
+  font-family: var(--font-serif-body);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-gold-primary);
+}
+
+.parents-child-sub {
+  font-family: var(--font-script);
+  font-size: 26px;
+  color: var(--color-gold-dark);
+  line-height: 0.9;
+  display: block;
+}
+
+/* ── Countdown Timer ── */
+.countdown-section {
+  padding: 45px 20px;
+  text-align: center;
+  background: var(--color-bg-ivory);
+  background-image: var(--geo-pattern);
+  background-repeat: repeat;
+  background-size: 60px 60px;
+  border-bottom: 1px solid rgba(166, 125, 43, 0.15);
+}
+
+.countdown-title {
+  font-family: var(--font-serif-title);
+  font-size: 13px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-gold-primary);
+  margin-bottom: 24px;
+}
+
+.countdown-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.timer-box {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(166, 125, 43, 0.3);
+  border-radius: 6px;
+  padding: 12px 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.timer-digit {
+  font-family: var(--font-serif-title);
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--color-gold-primary);
+  line-height: 1;
+  display: block;
+}
+
+.timer-unit {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-top: 6px;
+  display: block;
+}
+
+.timer-colon {
+  font-family: var(--font-serif-title);
+  font-size: 24px;
+  color: var(--color-gold-light);
+  margin-top: -12px;
+}
+
+/* ── Occasions Section ── */
+.events-section-wrapper {
+  padding: 40px 16px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: var(--color-bg-ivory);
+  background-image: var(--geo-pattern);
+  background-repeat: repeat;
+  background-size: 60px 60px;
+}
+
+.events-main-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.events-badge {
+  font-family: var(--font-serif-title);
+  font-size: 13px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-gold-primary);
+}
+
+.events-title {
+  font-family: var(--font-serif-body);
+  font-size: 34px;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  margin: 6px 0 0;
+}
+
+/* ── Luxury Occasion Card ── */
+.event-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 40px 24px 34px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(166, 125, 43, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Geometric pattern overlay */
+.event-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.10;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cdefs%3E%3Cpattern id='geo' x='0' y='0' width='60' height='60' patternUnits='userSpaceOnUse'%3E%3C!-- 8-point star lattice --%3E%3Cpolygon points='30,2 34,10 42,10 36,16 38,24 30,20 22,24 24,16 18,10 26,10' fill='none' stroke='%238B6914' stroke-width='1'/%3E%3Cpolygon points='30,38 34,46 42,46 36,52 38,60 30,56 22,60 24,52 18,46 26,46' fill='none' stroke='%238B6914' stroke-width='1'/%3E%3Cpolygon points='0,20 4,28 -4,28' fill='none' stroke='%238B6914' stroke-width='1'/%3E%3Cpolygon points='60,20 64,28 56,28' fill='none' stroke='%238B6914' stroke-width='1'/%3E%3Cline x1='30' y1='20' x2='30' y2='38' stroke='%238B6914' stroke-width='0.8'/%3E%3Cline x1='18' y1='10' x2='0' y2='20' stroke='%238B6914' stroke-width='0.8'/%3E%3Cline x1='42' y1='10' x2='60' y2='20' stroke='%238B6914' stroke-width='0.8'/%3E%3Cline x1='18' y1='46' x2='0' y2='40' stroke='%238B6914' stroke-width='0.8'/%3E%3Cline x1='42' y1='46' x2='60' y2='40' stroke='%238B6914' stroke-width='0.8'/%3E%3Ccircle cx='30' cy='30' r='2.5' fill='none' stroke='%238B6914' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='0' r='2' fill='none' stroke='%238B6914' stroke-width='0.8'/%3E%3Ccircle cx='60' cy='0' r='2' fill='none' stroke='%238B6914' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='60' r='2' fill='none' stroke='%238B6914' stroke-width='0.8'/%3E%3Ccircle cx='60' cy='60' r='2' fill='none' stroke='%238B6914' stroke-width='0.8'/%3E%3Crect x='26' y='26' width='8' height='8' fill='none' stroke='%238B6914' stroke-width='0.6' transform='rotate(45 30 30)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='60' height='60' fill='url(%23geo)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 60px 60px;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.12);
+}
+
+.event-card-inner-frame {
+  position: relative;
+  z-index: 2;
+}
+
+/* Card Themes */
+/* 1. Mehendi Theme (Festive Multicolor Watercolor) */
+.event-card.theme-mehendi {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.35)), url('../images/mehendi-bg.jpg') center/cover no-repeat;
+  border-color: rgba(205, 155, 175, 0.55);
+}
+.event-card.theme-mehendi .card-theme-pill {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(175, 130, 165, 0.4);
+  color: #724E68;
+}
+.event-card.theme-mehendi .card-title {
+  color: #8C4E65;
+}
+.event-card.theme-mehendi .card-script-accent {
+  color: #9E5B76;
+}
+
+/* 2. Haldi Theme (Pastel Sunlit Yellow) */
+.event-card.theme-haldi {
+  background: linear-gradient(180deg, #FFFDF0 0%, #FFF5D6 100%);
+  border-color: rgba(225, 188, 90, 0.5);
+}
+.event-card.theme-haldi .card-theme-pill {
+  background: rgba(255, 255, 255, 0.65);
+  border-color: rgba(210, 170, 70, 0.4);
+  color: #8C6A1E;
+}
+.event-card.theme-haldi .card-title {
+  color: #A0781E;
+}
+.event-card.theme-haldi .card-script-accent {
+  color: #B58B2E;
+}
+
+/* 3. Shukrana Theme (Pastel Green & Forest Green - No Gold) */
+.event-card.theme-shukrana {
+  background: linear-gradient(180deg, #F2F8F0 0%, #DFECDA 100%);
+  color: #2D3D2B;
+  border-color: rgba(90, 130, 85, 0.45);
+}
+.event-card.theme-shukrana .card-title {
+  color: #294627;
+}
+.event-card.theme-shukrana .card-script-accent {
+  color: #446842;
+}
+.event-card.theme-shukrana .card-date-big {
+  color: #243E22;
+}
+.event-card.theme-shukrana .card-date-day,
+.event-card.theme-shukrana .card-venue-name {
+  color: #2D482B;
+}
+.event-card.theme-shukrana .card-time,
+.event-card.theme-shukrana .card-tagline {
+  color: #3B5839;
+}
+.event-card.theme-shukrana .card-theme-pill {
+  background: rgba(255, 255, 255, 0.65);
+  border-color: rgba(90, 130, 85, 0.35);
+  color: #2E4C2C;
+}
+.event-card.theme-shukrana .card-divider {
+  background: rgba(60, 95, 55, 0.3);
+}
+
+/* 4. Nikaah Theme (Shades of White & Subtle Slate - No Gold) */
+.event-card.theme-nikaah {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F7F9 100%);
+  border-color: rgba(180, 188, 196, 0.6);
+  color: #2C3238;
+}
+.event-card.theme-nikaah .card-title {
+  color: #23282D;
+}
+.event-card.theme-nikaah .card-script-accent {
+  color: #555E68;
+}
+.event-card.theme-nikaah .card-date-big {
+  color: #1E2328;
+}
+.event-card.theme-nikaah .card-date-day,
+.event-card.theme-nikaah .card-venue-name {
+  color: #2F363E;
+}
+.event-card.theme-nikaah .card-time,
+.event-card.theme-nikaah .card-tagline {
+  color: #4B5560;
+}
+.event-card.theme-nikaah .card-theme-pill {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(160, 170, 180, 0.45);
+  color: #444E58;
+}
+.event-card.theme-nikaah .card-divider {
+  background: rgba(140, 150, 160, 0.35);
+}
+
+/* 5. Reception Theme (Pastel Rose Red) */
+.event-card.theme-reception {
+  background: linear-gradient(180deg, #FFF5F6 0%, #FDE4E7 100%);
+  color: #3D1C22;
+  border-color: rgba(220, 130, 145, 0.5);
+}
+.event-card.theme-reception .card-title {
+  color: #8E2536;
+}
+.event-card.theme-reception .card-script-accent {
+  color: #AB3E50;
+}
+.event-card.theme-reception .card-date-day,
+.event-card.theme-reception .card-venue-name {
+  color: #4A1D25;
+}
+.event-card.theme-reception .card-time,
+.event-card.theme-reception .card-tagline {
+  color: #5E252F;
+}
+.event-card.theme-reception .card-theme-pill {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(220, 130, 145, 0.4);
+  color: #8E2536;
+}
+.event-card.theme-reception .card-divider {
+  background: rgba(180, 50, 70, 0.25);
+}
+
+/* Card Elements */
+.card-theme-pill {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(166, 125, 43, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.card-title {
+  font-family: var(--font-serif-title);
+  font-size: 30px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold-primary);
+  margin: 0 0 4px;
+}
+
+.card-script-accent {
+  font-family: var(--font-script);
+  font-size: 32px;
+  color: var(--color-gold-dark);
+  line-height: 0.9;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.theme-shukrana .card-script-accent {
+  color: #446842;
+}
+
+.card-divider {
+  width: 60px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.35;
+  margin: 16px auto;
+}
+
+.card-date-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  max-width: 360px;
+  margin: 20px auto;
+  gap: 0;
+}
+
+.card-date-day {
+  font-family: var(--font-serif-title);
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.card-date-day:first-child {
+  text-align: right;
+  padding-right: 18px;
+}
+
+.card-date-day:last-child {
+  text-align: left;
+  padding-left: 18px;
+  line-height: 1.35;
+}
+
+.card-date-big {
+  font-family: var(--font-serif-title);
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-gold-primary);
+  border-left: 1px solid rgba(166, 125, 43, 0.35);
+  border-right: 1px solid rgba(166, 125, 43, 0.35);
+  padding: 4px 18px;
+  min-width: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.theme-mehendi .card-date-big {
+  color: #8C4E65;
+  border-color: rgba(175, 130, 165, 0.4);
+}
+
+.theme-haldi .card-date-big {
+  color: #A0781E;
+  border-color: rgba(210, 170, 70, 0.4);
+}
+
+.theme-shukrana .card-date-big {
+  color: #243E22;
+  border-color: rgba(60, 95, 55, 0.35);
+}
+
+.theme-nikaah .card-date-big {
+  color: #1E2328;
+  border-color: rgba(140, 150, 160, 0.35);
+}
+
+.theme-reception .card-date-big {
+  color: #8E2536;
+  border-color: rgba(220, 130, 145, 0.45);
+}
+
+.card-time {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.card-venue-block {
+  margin: 20px 0;
+}
+
+.card-venue-label {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 4px;
+}
+
+.card-venue-name {
+  font-family: var(--font-serif-title);
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.card-venue-city {
+  font-family: var(--font-serif-body);
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.card-tagline {
+  font-family: var(--font-serif-body);
+  font-size: 14px;
+  font-style: italic;
+  margin: 14px 0 20px;
+  opacity: 0.9;
+}
+
+/* ── Buttons ── */
+.btn-maps {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-family: var(--font-serif-title);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgba(166, 125, 43, 0.6);
+  color: var(--color-gold-primary);
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.btn-maps:hover {
+  background: var(--color-gold-primary);
+  color: #FFFFFF;
+  border-color: var(--color-gold-primary);
+  box-shadow: 0 4px 12px rgba(166, 125, 43, 0.25);
+}
+
+.theme-mehendi .btn-maps {
+  background: rgba(255, 255, 255, 0.8);
+  color: #724E68;
+  border-color: rgba(175, 130, 165, 0.6);
+}
+.theme-mehendi .btn-maps:hover {
+  background: #724E68;
+  color: #FFFFFF;
+  border-color: #724E68;
+}
+
+.theme-haldi .btn-maps {
+  background: rgba(255, 255, 255, 0.85);
+  color: #8C6A1E;
+  border-color: rgba(210, 170, 70, 0.6);
+}
+.theme-haldi .btn-maps:hover {
+  background: #8C6A1E;
+  color: #FFFFFF;
+  border-color: #8C6A1E;
+}
+
+.theme-shukrana .btn-maps {
+  background: rgba(255, 255, 255, 0.85);
+  color: #2E4C2C;
+  border-color: rgba(60, 95, 55, 0.5);
+}
+.theme-shukrana .btn-maps:hover {
+  background: #2E4C2C;
+  color: #FFFFFF;
+  border-color: #2E4C2C;
+}
+
+.theme-nikaah .btn-maps {
+  background: rgba(255, 255, 255, 0.95);
+  color: #38424B;
+  border-color: rgba(140, 150, 160, 0.6);
+}
+.theme-nikaah .btn-maps:hover {
+  background: #38424B;
+  color: #FFFFFF;
+  border-color: #38424B;
+}
+
+.theme-reception .btn-maps {
+  background: rgba(255, 255, 255, 0.85);
+  color: #8E2536;
+  border-color: rgba(220, 130, 145, 0.55);
+}
+.theme-reception .btn-maps:hover {
+  background: #8E2536;
+  color: #FFFFFF;
+  border-color: #8E2536;
+}
+
+.btn-maps svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+/* ── Add to Calendar & Footer Section ── */
+.footer-action-section {
+  padding: 50px 20px 60px;
+  text-align: center;
+  background: #FAF4EB;
+  background-image: var(--geo-pattern);
+  background-repeat: repeat;
+  background-size: 60px 60px;
+  border-top: 1px solid rgba(166, 125, 43, 0.2);
+}
+
+.calendar-btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.btn-calendar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 28px;
+  border-radius: 30px;
+  font-family: var(--font-serif-title);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: var(--color-burgundy);
+  color: #FAF4EB;
+  border: 1px solid rgba(216, 186, 114, 0.5);
+  box-shadow: 0 4px 14px rgba(90, 15, 27, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-calendar:hover {
+  background: var(--color-burgundy-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(90, 15, 27, 0.35);
+}
+
+.footer-quote {
+  font-family: var(--font-script);
+  font-size: 32px;
+  color: var(--color-gold-primary);
+  margin: 15px 0 6px;
+}
+
+.footer-monogram {
+  width: 55px;
+  height: 55px;
+  margin: 20px auto 10px;
+  opacity: 0.9;
+}
+
+.footer-credits {
+  font-family: var(--font-serif-title);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+/* ── Responsive Refinements ── */
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 38px;
+  }
+  .hero-ampersand {
+    font-size: 36px;
+  }
+  .card-title {
+    font-size: 26px;
+  }
+  .card-date-big {
+    font-size: 30px;
+    padding: 2px 14px;
+    min-width: 48px;
+  }
+  .card-date-day {
+    font-size: 11px;
+  }
+  .card-date-day:first-child {
+    padding-right: 12px;
+  }
+  .card-date-day:last-child {
+    padding-left: 12px;
+  }
+  .events-section-wrapper {
+    padding: 30px 12px 50px;
+    gap: 30px;
+  }
+  .event-card {
+    padding: 32px 16px 28px;
+  }
+}
